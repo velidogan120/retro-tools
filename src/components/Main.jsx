@@ -17,7 +17,7 @@ const Main = () => {
                 ? 
                 <Room username={username} setUsername={setUsername} room={room} setRoom={setRoom} setChatScreen={setChatScreen} socket={socket}></Room>
                 :
-                <Card socket={socket}></Card>
+                <Card socket={socket} username={username} room={room}></Card>
         }
     </div>
   )
